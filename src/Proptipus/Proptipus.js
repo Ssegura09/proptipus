@@ -18,7 +18,15 @@ import TentacleEight from "./Tentacles/TentacleEight";
 class Proptipus extends React.Component {
   state = ProptipusState
 
-  // This is where you will be writing most of your functions!
+  addDat = () => {
+    let newNum = this.state.magicNumber + 1
+    this.setState({magicNumber: newNum})
+  }
+
+  subtractDat = () => {
+    let newNum = this.state.magicNumber - 1
+    this.setState({magicNumber: newNum})
+  }
 
   render() {
     return (
@@ -33,8 +41,8 @@ class Proptipus extends React.Component {
         <TentacleTwo favoriteFishGiOhCard={this.state.favoriteFishGiOhCard}/>
         <TentacleThree hatedFishGiOhCard={this.state.hatedFishGiOhCard}/>
         <TentacleFour friendsList={this.state.friendsList}/>
-        <TentacleFive/>
-        <TentacleSix/>
+        <TentacleFive addDat={this.addDat} subtractDat={this.subtractDat}/>
+        <TentacleSix magicNumber={this.state.magicNumber}/>
         <TentacleSeven/>
         <TentacleEight/>
       </div>
