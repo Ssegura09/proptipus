@@ -29,9 +29,9 @@ class Proptipus extends React.Component {
           src={ProptipusBackground}
           alt="background"
         />
-        <TentacleOne/>
-        <TentacleTwo/>
-        <TentacleThree/>
+        <TentacleOne punchline={this.state.punchline}/>
+        <TentacleTwo favoriteFishGiOhCard={this.state.favoriteFishGiOhCard}/>
+        <TentacleThree hatedFishGiOhCard={this.state.hatedFishGiOhCard}/>
         <TentacleFour/>
         <TentacleFive/>
         <TentacleSix/>
