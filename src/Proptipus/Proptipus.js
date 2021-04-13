@@ -43,8 +43,8 @@ class Proptipus extends React.Component {
         <TentacleFour friendsList={this.state.friendsList}/>
         <TentacleFive addDat={this.addDat} subtractDat={this.subtractDat}/>
         <TentacleSix magicNumber={this.state.magicNumber}/>
-        <TentacleSeven/>
-        <TentacleEight/>
+        <TentacleSeven />
+        <TentacleEight favoriteMovies={this.state.favoriteMovies}/>
       </div>
     );
   }
