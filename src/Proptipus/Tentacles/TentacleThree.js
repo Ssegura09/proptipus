@@ -22,7 +22,7 @@ function TentacleThree({hatedFishGiOhCard}){
         </span>
 
         <span className="fish-attack">
-          {/* Fish attack goes here */}
+          {hatedFishGiOhCard.attack}
         </span>
       </div>
     );

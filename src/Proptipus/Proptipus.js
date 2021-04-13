@@ -32,7 +32,7 @@ class Proptipus extends React.Component {
         <TentacleOne punchline={this.state.punchline}/>
         <TentacleTwo favoriteFishGiOhCard={this.state.favoriteFishGiOhCard}/>
         <TentacleThree hatedFishGiOhCard={this.state.hatedFishGiOhCard}/>
-        <TentacleFour/>
+        <TentacleFour friendsList={this.state.friendsList}/>
         <TentacleFive/>
         <TentacleSix/>
         <TentacleSeven/>
